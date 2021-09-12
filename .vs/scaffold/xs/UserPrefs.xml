@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{BEF7F72E-ACEE-4332-86B2-F4E807EC25B9}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="scaffold" expanded="True">
+            <Node name="scaffold.iOS" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.scaffold.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.scaffold.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.50AA53F4-1724-463F-8886-9BDF90E4440A" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="multiprojId" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{C2388591-CAC5-4A3F-84DF-451EBC70E32A}" ItemName="scaffold.Android" ConfigurationId="Default" />
+        <StartupItem ItemId="{BEF7F72E-ACEE-4332-86B2-F4E807EC25B9}" ItemName="scaffold.iOS" ConfigurationId="Default" />
+        <StartupItem ItemId="{989E0540-7FD5-4855-8259-4C501AD48D28}" ItemName="scaffold.Web" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.scaffold.Android PreferredExecutionTarget="Android.android_wear_square_pie_9_0_-_api_28" />
+</Properties>

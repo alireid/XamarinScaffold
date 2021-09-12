@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "P38AUNB+hulyl7YXKAv83Pake75m3Lac8hO8Gjdsv5+sfmHmwKEW5Fl0dmjJihXQguv1LPfTUQeu+n+9NlaOsA==",
+  "success": true,
+  "projectFilePath": "/Users/alireid/Documents/Projects/scaffold/scaffold.UITests/scaffold.UITests.csproj",
+  "expectedPackageFiles": [
+    "/Users/alireid/.nuget/packages/nunit/3.12.0/nunit.3.12.0.nupkg.sha512",
+    "/Users/alireid/.nuget/packages/xamarin.uitest/3.0.5/xamarin.uitest.3.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

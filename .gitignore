@@ -1,0 +1,5 @@
+**/scaffold/obj
+**/scaffold.Android/obj
+**/scaffold.Android/bin
+**/scaffold.iOS/obj
+**/scaffold.iOS/bin

@@ -1,0 +1,10 @@
+/Users/alireid/Projects/scaffold/scaffold.UITests/bin/Debug/scaffold.UITests.dll
+/Users/alireid/Projects/scaffold/scaffold.UITests/bin/Debug/scaffold.UITests.pdb
+/Users/alireid/Projects/scaffold/scaffold.UITests/bin/Debug/nunit.framework.dll
+/Users/alireid/Projects/scaffold/scaffold.UITests/bin/Debug/nunit.framework.pdb
+/Users/alireid/Projects/scaffold/scaffold.UITests/bin/Debug/Xamarin.UITest.dll
+/Users/alireid/Projects/scaffold/scaffold.UITests/obj/Debug/scaffold.UITests.csprojAssemblyReference.cache
+/Users/alireid/Projects/scaffold/scaffold.UITests/obj/Debug/scaffold.UITests.csproj.CoreCompileInputs.cache
+/Users/alireid/Projects/scaffold/scaffold.UITests/obj/Debug/scaffold.UITests.csproj.CopyComplete
+/Users/alireid/Projects/scaffold/scaffold.UITests/obj/Debug/scaffold.UITests.dll
+/Users/alireid/Projects/scaffold/scaffold.UITests/obj/Debug/scaffold.UITests.pdb
