@@ -7,7 +7,7 @@
     <StackLayout>
         <SwipeCardView:SwipeCardView
             x:Name="SwipeView1" ItemsSource="{Binding Profile}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-            Padding="10" SupportedDraggingDirections="Left,Right,Up">
+            Padding="10" Margin="10" SupportedDraggingDirections="Left,Right,Up">
             <SwipeCardView:SwipeCardView.ItemTemplate>
                 <DataTemplate>
                     <Label Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Color}" />
