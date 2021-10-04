@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="scaffold.Views.Swiper"
-             xmlns:SwipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView">
+             xmlns:SwipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView" xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
 
     <StackLayout>
         <SwipeCardView:SwipeCardView
@@ -10,7 +10,23 @@
             Padding="10" Margin="10" SupportedDraggingDirections="Left,Right,Up"  SwipedCommand="{Binding SwipedCommand}" >
             <SwipeCardView:SwipeCardView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Color}" />
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <StackLayout>
+                            <ff:CachedImage 
+                        Source="{Binding Image}"
+                        DownsampleToViewSize="True"
+                        RetryCount="3"
+                        RetryDelay="1000"
+                        WidthRequest="370"
+                        HeightRequest="370"
+                        Aspect="AspectFit"
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand" />
+                        <Label Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Beige"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
                 </DataTemplate>
             </SwipeCardView:SwipeCardView.ItemTemplate>
         </SwipeCardView:SwipeCardView>

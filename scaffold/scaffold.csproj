@@ -19,6 +19,8 @@
     <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.2" />
     <PackageReference Include="SkiaSharp.Views" Version="2.80.2" />
     <PackageReference Include="MLToolkit.Forms.SwipeCardView" Version="2.2.0" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
@@ -30,5 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="MLToolkit.Forms.SwipeCardView" />
+    <None Remove="Xamarin.FFImageLoading" />
+    <None Remove="Xamarin.FFImageLoading.Forms" />
   </ItemGroup>
 </Project>

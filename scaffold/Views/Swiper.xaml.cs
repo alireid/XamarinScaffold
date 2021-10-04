@@ -42,7 +42,7 @@ namespace scaffold.Views
         {
             foreach(UserProfile p in payload)
             {
-                _Profile.Add(new UserProfile() { Name = p.Name, Color = Color.FromHex(p.Hex), Image = p.Image });
+                _Profile.Add(new UserProfile() { Name = p.Name, Color = Color.FromHex(p.Hex), ImageSource = new Uri(p.Image), Image = p.Image });
             }
         }
 
@@ -54,9 +54,9 @@ namespace scaffold.Views
         {
             var items = new List<UserProfile>();
 
-            items.Add(new UserProfile() { Hex = "FF0000", Image = "1.jpg", Name = "a" });
-            items.Add(new UserProfile() { Hex = "0000FF", Image = "2.jpg", Name = "b" });
-            items.Add(new UserProfile() { Hex = "00FF00", Image = "3.jpg", Name = "c" });
+            items.Add(new UserProfile() { Hex = "FF0000", Image = "/temp/img/1.jpg", Name = "Jade" });
+            items.Add(new UserProfile() { Hex = "0000FF", Image = "/temp/img/2.jpg", Name = "Gemma" });
+            items.Add(new UserProfile() { Hex = "00FF00", Image = "/temp/img/3.jpg", Name = "Kelly" });
 
             return items;
         }
@@ -92,6 +92,7 @@ namespace scaffold.Views
             public string Name { get; set; }
             public string Image { get; set; }
             public Color Color { get; set; }
+            public ImageSource ImageSource { get; set; }
             public string Hex { get; set; }
         }
     }
