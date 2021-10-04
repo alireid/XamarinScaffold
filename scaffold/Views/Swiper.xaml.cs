@@ -7,17 +7,35 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using scaffold.Helpers;
+using MLToolkit.Forms.SwipeCardView.Core;
 
 namespace scaffold.Views
 {
     public partial class Swiper : ContentPage
     {
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Navigation.PushModalAsync(new Swiper());
+        }
+
         public ObservableCollection<UserProfile> _Profile = new ObservableCollection<UserProfile>();
         public Swiper()
         {
             InitializeComponent();
             CardBinding(this.Retrieve());
             BindingContext = this;
+
+            SwipeView1.Swiped += OnSwiped;
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            // move on a different tab to avoid infinite loop when back button is pressed
+            var masterPage = this.Parent as TabbedPage;
+            masterPage.CurrentPage = masterPage.Children[0];
         }
 
         public void CardBinding(List<UserProfile> payload)
@@ -41,6 +59,23 @@ namespace scaffold.Views
             items.Add(new UserProfile() { Hex = "00FF00", Image = "3.jpg", Name = "c" });
 
             return items;
+        }
+
+        private void OnSwiped(object sender, SwipedCardEventArgs e)
+        {
+            
+            switch (e.Direction)
+            {
+
+                case SwipeCardDirection.Right:
+                    var item = (UserProfile)e.Item;
+                    DisplayAlert("Alert", string.Format("You liked {0}", item.Name), "OK");
+                    break;
+                case SwipeCardDirection.Left:
+                    var item2 = (UserProfile)e.Item;
+                    DisplayAlert("Alert", string.Format("You did NOT like {0}", item2.Name), "OK");
+                    break;
+            }
         }
 
         public ObservableCollection<UserProfile> Profile
