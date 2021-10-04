@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using scaffold.Helpers;
 
 namespace scaffold.Views
 {
@@ -15,17 +16,31 @@ namespace scaffold.Views
         public Swiper()
         {
             InitializeComponent();
-            CardBinding();
+            CardBinding(this.Retrieve());
             BindingContext = this;
         }
 
-        public void CardBinding()
+        public void CardBinding(List<UserProfile> payload)
         {
-            _Profile.Add(new UserProfile() { Name = "1", Color = Color.Green, Image = "1.jpg" });
-            _Profile.Add(new UserProfile() { Name = "2", Color = Color.Yellow, Image = "2.jpg" });
-            _Profile.Add(new UserProfile() { Name = "3", Color = Color.Orange, Image = "3.jpg" });
-            _Profile.Add(new UserProfile() { Name = "4", Color = Color.Blue, Image = "4.jpg" });
-            _Profile.Add(new UserProfile() { Name = "5", Color = Color.Black, Image = "5.jpg" });
+            foreach(UserProfile p in payload)
+            {
+                _Profile.Add(new UserProfile() { Name = p.Name, Color = Color.FromHex(p.Hex), Image = p.Image });
+            }
+        }
+
+        /// <summary>
+        /// Make this a json reterival method
+        /// </summary>
+        /// <returns></returns>
+        public List<UserProfile> Retrieve()
+        {
+            var items = new List<UserProfile>();
+
+            items.Add(new UserProfile() { Hex = "FF0000", Image = "1.jpg", Name = "a" });
+            items.Add(new UserProfile() { Hex = "0000FF", Image = "2.jpg", Name = "b" });
+            items.Add(new UserProfile() { Hex = "00FF00", Image = "3.jpg", Name = "c" });
+
+            return items;
         }
 
         public ObservableCollection<UserProfile> Profile
@@ -40,9 +55,9 @@ namespace scaffold.Views
         public class UserProfile
         {
             public string Name { get; set; }
-            public string Colour { get; set; }
             public string Image { get; set; }
             public Color Color { get; set; }
+            public string Hex { get; set; }
         }
     }
 }

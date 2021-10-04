@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scaffold.UITests", "scaffol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scaffold", "scaffold\scaffold.csproj", "{610F5A44-68B8-4BF8-B071-4D5D99A39360}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{066BD639-391C-4F1D-9946-2D3872E3A6BC}"
+	ProjectSection(SolutionItems) = preProject
+		scaffold.sln = scaffold.sln
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
