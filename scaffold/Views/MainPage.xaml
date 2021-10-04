@@ -49,6 +49,18 @@
             </NavigationPage.Icon>
         </NavigationPage>
 
+        <NavigationPage Title="Swiper">
+            <x:Arguments>
+                <views:Swiper />
+            </x:Arguments>
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_about.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+        </NavigationPage>
+
+
     </TabbedPage.Children>
     
 </TabbedPage>

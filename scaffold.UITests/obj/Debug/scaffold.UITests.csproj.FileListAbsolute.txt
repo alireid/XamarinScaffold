@@ -8,3 +8,13 @@
 /Users/alireid/Projects/scaffold/scaffold.UITests/obj/Debug/scaffold.UITests.csproj.CopyComplete
 /Users/alireid/Projects/scaffold/scaffold.UITests/obj/Debug/scaffold.UITests.dll
 /Users/alireid/Projects/scaffold/scaffold.UITests/obj/Debug/scaffold.UITests.pdb
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/bin/Debug/scaffold.UITests.dll
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/bin/Debug/scaffold.UITests.pdb
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/bin/Debug/nunit.framework.dll
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/bin/Debug/nunit.framework.pdb
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/bin/Debug/Xamarin.UITest.dll
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/obj/Debug/scaffold.UITests.csproj.AssemblyReference.cache
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/obj/Debug/scaffold.UITests.csproj.CoreCompileInputs.cache
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/obj/Debug/scaffold.UITests.csproj.CopyComplete
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/obj/Debug/scaffold.UITests.dll
+/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/obj/Debug/scaffold.UITests.pdb

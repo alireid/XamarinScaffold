@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Net;
-using Foundation;
 using Newtonsoft.Json;
 using SkiaSharp;
 
@@ -117,7 +116,7 @@ namespace scaffold.Helpers
             }
 
 
-        public static SKTypeface GetCustomFont(string name)
+        /*public static SKTypeface GetCustomFont(string name)
         {
             string fontFile = Path.Combine(NSBundle.MainBundle.BundlePath, name);
             SkiaSharp.SKTypeface typeFace;
@@ -132,7 +131,7 @@ namespace scaffold.Helpers
             }
 
             return typeFace;
-        }
+        }*/
 
 
         /// <summary>

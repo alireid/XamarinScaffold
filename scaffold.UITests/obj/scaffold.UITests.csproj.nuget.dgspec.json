@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alireid/Documents/Projects/scaffold/scaffold.UITests/scaffold.UITests.csproj": {}
+    "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/scaffold.UITests.csproj": {}
   },
   "projects": {
-    "/Users/alireid/Documents/Projects/scaffold/scaffold.UITests/scaffold.UITests.csproj": {
+    "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/scaffold.UITests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alireid/Documents/Projects/scaffold/scaffold.UITests/scaffold.UITests.csproj",
+        "projectUniqueName": "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/scaffold.UITests.csproj",
         "projectName": "scaffold.UITests",
-        "projectPath": "/Users/alireid/Documents/Projects/scaffold/scaffold.UITests/scaffold.UITests.csproj",
+        "projectPath": "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/scaffold.UITests.csproj",
         "packagesPath": "/Users/alireid/.nuget/packages/",
-        "outputPath": "/Users/alireid/Documents/Projects/scaffold/scaffold.UITests/obj/",
+        "outputPath": "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [

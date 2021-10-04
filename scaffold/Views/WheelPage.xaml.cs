@@ -175,7 +175,7 @@ namespace scaffold.Views
                     textPaint.Color = SKColors.White;
 
                     // font
-                    textPaint.Typeface = Utility.GetCustomFont("ZODIACS.TTF");
+                    //textPaint.Typeface = Utility.GetCustomFont("ZODIACS.TTF");
                         //SKTypeface.FromFile("ZODIACS.TTF");
 
 

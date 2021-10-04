@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alireid/Documents/Projects/scaffold/scaffold.Web/scaffold.Web.csproj": {}
+    "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.Web/scaffold.Web.csproj": {}
   },
   "projects": {
-    "/Users/alireid/Documents/Projects/scaffold/scaffold.Web/scaffold.Web.csproj": {
+    "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.Web/scaffold.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alireid/Documents/Projects/scaffold/scaffold.Web/scaffold.Web.csproj",
+        "projectUniqueName": "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.Web/scaffold.Web.csproj",
         "projectName": "scaffold.Web",
-        "projectPath": "/Users/alireid/Documents/Projects/scaffold/scaffold.Web/scaffold.Web.csproj",
+        "projectPath": "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.Web/scaffold.Web.csproj",
         "packagesPath": "/Users/alireid/.nuget/packages/",
-        "outputPath": "/Users/alireid/Documents/Projects/scaffold/scaffold.Web/obj/",
+        "outputPath": "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alireid/.config/NuGet/NuGet.Config"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

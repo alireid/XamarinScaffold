@@ -18,6 +18,7 @@
     <PackageReference Include="SkiaSharp" Version="2.80.2" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.2" />
     <PackageReference Include="SkiaSharp.Views" Version="2.80.2" />
+    <PackageReference Include="MLToolkit.Forms.SwipeCardView" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
@@ -26,5 +27,8 @@
     <Reference Include="Xamarin.iOS">
       <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\14.14.2.5\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="MLToolkit.Forms.SwipeCardView" />
   </ItemGroup>
 </Project>

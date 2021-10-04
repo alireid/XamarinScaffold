@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scaffold.Views.Swiper"
+             xmlns:SwipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView">
+
+    <StackLayout>
+        <SwipeCardView:SwipeCardView
+            x:Name="SwipeView1" ItemsSource="{Binding Profile}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+            Padding="10" SupportedDraggingDirections="Left,Right,Up">
+            <SwipeCardView:SwipeCardView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{Binding Color}" />
+                </DataTemplate>
+            </SwipeCardView:SwipeCardView.ItemTemplate>
+        </SwipeCardView:SwipeCardView>
+    </StackLayout>
+
+</ContentPage>
