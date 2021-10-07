@@ -32,6 +32,10 @@
       "frameworks": {
         "net461": {
           "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.12.0, )"

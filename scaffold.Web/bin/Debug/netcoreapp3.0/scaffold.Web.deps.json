@@ -30,6 +30,7 @@
     ".NETCoreApp,Version=v3.0": {
       "scaffold.Web/1.0.0": {
         "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -107,7 +108,7 @@
           "Microsoft.AspNetCore.StaticFiles": "3.0.0.0",
           "Microsoft.AspNetCore.WebSockets": "3.0.0.0",
           "Microsoft.AspNetCore.WebUtilities": "3.0.0.0",
-          "Microsoft.CSharp": "4.0.0.0",
+          "Microsoft.CSharp.Reference": "4.0.0.0",
           "Microsoft.Extensions.Caching.Abstractions": "3.0.0.0",
           "Microsoft.Extensions.Caching.Memory": "3.0.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "3.0.0.0",
@@ -320,6 +321,7 @@
           "scaffold.Web.dll": {}
         }
       },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -782,7 +784,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.CSharp/4.0.0.0": {
+      "Microsoft.CSharp.Reference/4.0.0.0": {
         "compile": {
           "Microsoft.CSharp.dll": {}
         },
@@ -2020,6 +2022,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -2405,7 +2414,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.CSharp/4.0.0.0": {
+    "Microsoft.CSharp.Reference/4.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

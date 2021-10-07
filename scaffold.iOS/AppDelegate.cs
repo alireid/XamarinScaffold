@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FFImageLoading.Forms.Platform;
 using Foundation;
 using UIKit;
 
@@ -26,6 +26,10 @@ namespace scaffold.iOS
             Xamarin.Calabash.Start();
 #endif
             global::Xamarin.Forms.Forms.Init();
+
+            CachedImageRenderer.Init();
+            CachedImageRenderer.InitImageSourceHandler();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

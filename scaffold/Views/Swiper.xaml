@@ -7,11 +7,11 @@
     <StackLayout>
         <SwipeCardView:SwipeCardView
             x:Name="SwipeView1" ItemsSource="{Binding Profile}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-            Padding="10" Margin="10" SupportedDraggingDirections="Left,Right,Up"  SwipedCommand="{Binding SwipedCommand}" >
+            Padding="10" Margin="10" SupportedDraggingDirections="Left,Right,Up"  SwipedCommand="{Binding SwipedCommand}" DraggingCommand="{Binding DragCommand}" >
             <SwipeCardView:SwipeCardView.ItemTemplate>
                 <DataTemplate>
-                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Margin="0, 0, 0, 40" >
+                    <Frame CornerRadius="10" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0, 0, 0, 100">
                         <StackLayout>
                             <ff:CachedImage 
                         Source="{Binding Image}"

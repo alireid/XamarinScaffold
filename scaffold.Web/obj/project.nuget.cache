@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WBYRn+/dLCRVO69hVELB3sS3QIDLfaMoMQ9USd0sVdtufqE30HXWCKAMdxi25jsj+NtUkpkibI5X8/idFR7QgQ==",
+  "dgSpecHash": "lfwxhGtRtMgR/CCYzdLFhtSZHEvVE+nufp2W55aRq890cv6jW0U9FPMpUHVI4wtPJS4+AF6uQ0axUWMxQWpmuQ==",
   "success": true,
   "projectFilePath": "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.Web/scaffold.Web.csproj",
   "expectedPackageFiles": [
+    "/Users/alireid/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/alireid/.nuget/packages/microsoft.aspnetcore.app.ref/3.0.1/microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
     "/Users/alireid/.nuget/packages/microsoft.netcore.app.ref/3.0.0/microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
   ],

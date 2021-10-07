@@ -8,73 +8,108 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using scaffold.Helpers;
 using MLToolkit.Forms.SwipeCardView.Core;
+using System.Windows.Input;
+using scaffold.Models;
 
 namespace scaffold.Views
 {
     public partial class Swiper : ContentPage
     {
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            Navigation.PushModalAsync(new Swiper());
-        }
-
         public ObservableCollection<UserProfile> _Profile = new ObservableCollection<UserProfile>();
+        public UserProfileList _Users = new UserProfileList();
+        public List<UserProfile> _LikedList = new List<UserProfile>();
+
         public Swiper()
         {
             InitializeComponent();
-            CardBinding(this.Retrieve());
-            BindingContext = this;
-
             SwipeView1.Swiped += OnSwiped;
+            SwipeView1.Dragging += OnDragged;
         }
 
+        /// <summary>
+        /// On appearing
+        /// </summary>
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            new Swiper();
+            await CardBindingAsync();
+            _LikedList.Clear();
+            BindingContext = this;
+        }
+
+
+        /// <summary>
+        /// On disappearing
+        /// </summary>
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            // move on a different tab to avoid infinite loop when back button is pressed
-            var masterPage = this.Parent as TabbedPage;
-            masterPage.CurrentPage = masterPage.Children[0];
         }
 
-        public void CardBinding(List<UserProfile> payload)
+        /// <summary>
+        /// Binding of users to profile
+        /// </summary>
+        public async Task CardBindingAsync()
         {
-            foreach(UserProfile p in payload)
+            _Users = await Services.GetUsersService.GetUsers();
+
+            foreach (UserProfile p in _Users.Users)
             {
-                _Profile.Add(new UserProfile() { Name = p.Name, Color = Color.FromHex(p.Hex), ImageSource = new Uri(p.Image), Image = p.Image });
+                _Profile.Add(new UserProfile() { Name = p.Name, Color = Color.FromHex(p.Hex), ImageSource = new Uri(p.Image), Image = p.Image, UserId = p.UserId });
             }
         }
 
         /// <summary>
-        /// Make this a json reterival method
+        /// On swipe command add user to liked list
         /// </summary>
-        /// <returns></returns>
-        public List<UserProfile> Retrieve()
-        {
-            var items = new List<UserProfile>();
-
-            items.Add(new UserProfile() { Hex = "FF0000", Image = "/temp/img/1.jpg", Name = "Jade" });
-            items.Add(new UserProfile() { Hex = "0000FF", Image = "/temp/img/2.jpg", Name = "Gemma" });
-            items.Add(new UserProfile() { Hex = "00FF00", Image = "/temp/img/3.jpg", Name = "Kelly" });
-
-            return items;
-        }
-
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnSwiped(object sender, SwipedCardEventArgs e)
-        {
-            
+        {  
             switch (e.Direction)
             {
-
                 case SwipeCardDirection.Right:
-                    var item = (UserProfile)e.Item;
-                    DisplayAlert("Alert", string.Format("You liked {0}", item.Name), "OK");
+                    _LikedList.Add((UserProfile)e.Item);
                     break;
                 case SwipeCardDirection.Left:
-                    var item2 = (UserProfile)e.Item;
-                    DisplayAlert("Alert", string.Format("You did NOT like {0}", item2.Name), "OK");
+                    // action tbd
                     break;
+            }
+        }
+
+        /// <summary>
+        /// On drag command
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnDragged(object sender, DraggingCardEventArgs e)
+        {
+            switch (e.Position)
+            {
+                case DraggingCardPosition.FinishedOverThreshold:
+                    this.EndOfStack((UserProfile)e.Item);
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Once reached end of stack altert
+        /// </summary>
+        /// <param name="e"></param>
+        private void EndOfStack(UserProfile e)
+        {
+            // Last item in stack alert
+            if (e.UserId == _Users.Users.Last().UserId)
+            {
+                string likedPeople = String.Empty;
+
+                foreach(UserProfile p in _LikedList)
+                {
+                    likedPeople += Environment.NewLine + p.Name;
+                }
+
+                DisplayAlert("Alert", string.Format("End of stack, you liked: {0}", likedPeople), "OK");
             }
         }
 
@@ -85,15 +120,6 @@ namespace scaffold.Views
             {
                 _Profile = value;
             }
-        }
-
-        public class UserProfile
-        {
-            public string Name { get; set; }
-            public string Image { get; set; }
-            public Color Color { get; set; }
-            public ImageSource ImageSource { get; set; }
-            public string Hex { get; set; }
         }
     }
 }

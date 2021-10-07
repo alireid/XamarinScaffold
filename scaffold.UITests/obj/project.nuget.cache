@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HG/11MzB3FXal9ObJ9TN3yo69Q9fufo4DLOHvFa2dzMjCKeCxdQzMFeBijdtTrKsC7xATpxWGqhDGUU21zm7WQ==",
+  "dgSpecHash": "lZKzAtDWBeMjc7ZotIE5siAQ7BgCAeFZAZ5vCccrNzTsGo+ZrEk+EeKe6IzxEc6WmhxC8L63FlxhENwuCQ5TeA==",
   "success": true,
   "projectFilePath": "/Users/alireid/Documents/Projects/XamarinScaffold/scaffold.UITests/scaffold.UITests.csproj",
   "expectedPackageFiles": [
+    "/Users/alireid/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/alireid/.nuget/packages/nunit/3.12.0/nunit.3.12.0.nupkg.sha512",
     "/Users/alireid/.nuget/packages/xamarin.uitest/3.0.5/xamarin.uitest.3.0.5.nupkg.sha512"
   ],
