@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{BEF7F72E-ACEE-4332-86B2-F4E807EC25B9}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="scaffold/Views/Swiper.xaml.cs">
     <Files>
-      <File FileName="scaffold/Views/Swiper.xaml.cs" Line="57" Column="1" />
-      <File FileName="scaffold/Models/UserProfile.cs" Line="4" Column="1" />
-      <File FileName="scaffold/Models/UserProfileList.cs" Line="7" Column="2" />
-      <File FileName="scaffold/Services/GetUsersService.cs" Line="24" Column="1" />
-      <File FileName="scaffold/Helpers/DataService.cs" Line="13" Column="1" />
+      <File FileName="scaffold/Views/Swiper.xaml.cs" Line="58" Column="14" />
+      <File FileName="scaffold/Services/GetUsersService.cs" Line="26" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -51,9 +48,7 @@
   <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/alireid/Documents/Projects/XamarinScaffold/scaffold/Services/GetUsersService.cs" relfile="scaffold/Services/GetUsersService.cs" line="24" column="1" />
       <Breakpoint file="/Users/alireid/Documents/Projects/XamarinScaffold/scaffold/Helpers/DataService.cs" relfile="scaffold/Helpers/DataService.cs" line="13" column="1" />
-      <Breakpoint file="/Users/alireid/Documents/Projects/XamarinScaffold/scaffold/Views/Swiper.xaml.cs" relfile="scaffold/Views/Swiper.xaml.cs" line="69" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>

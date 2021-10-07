@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using Xamarin.Forms;
 
 namespace scaffold.Models
 {
+    /// <summary>
+    /// Singular
+    /// </summary>
     public class UserProfile
     {
         public string Name { get; set; }
@@ -12,5 +16,13 @@ namespace scaffold.Models
         public ImageSource ImageSource { get; set; }
         public string Hex { get; set; }
         public int UserId { get; set; }
+    }
+
+    /// <summary>
+    /// List
+    /// </summary>
+    public class UserProfileList
+    {
+        public List<UserProfile> Users { get; set; }
     }
 }
